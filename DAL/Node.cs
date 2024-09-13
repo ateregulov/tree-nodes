@@ -14,7 +14,7 @@ namespace TreesNodes.DAL
         public string Name { get; set; }
 
         public int? ParentId { get; set; }
-        public Node Parent { get; set; } 
-        public List<Node> Children { get; set; }
+        public Node? Parent { get; set; } 
+        public List<Node>? Children { get; set; }
     }
 }
