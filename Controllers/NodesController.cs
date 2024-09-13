@@ -14,6 +14,7 @@ namespace TreesNodes.Controllers
     /// </summary>
     [ApiController]
     [Tags("user.tree.node")]
+    [CustomExceptionFilter]
     public class NodesController : ControllerBase
     {
         private readonly MyContext _context;

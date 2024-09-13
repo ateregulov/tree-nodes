@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.ModelBinding;
 using ReactTest.Tree.Site.Model;
 using TreesNodes.DAL;
+using TreesNodes.Helpers;
 
 namespace TreesNodes.Controllers
 {
@@ -11,6 +12,7 @@ namespace TreesNodes.Controllers
     /// </summary>
     [ApiController]
     [Tags("user.tree")]
+    [CustomExceptionFilter]
     public class TreesController : ControllerBase
     {
         private readonly MyContext _context;
