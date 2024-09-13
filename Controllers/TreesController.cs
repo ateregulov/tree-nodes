@@ -48,9 +48,9 @@ namespace TreesNodes.Controllers
 
         private async Task GetChildren(Node node)
         {
-            var children = _context.Nodes.Where(f => f.ParentId == node.Id).ToList();
+            var children = _context.Nodes.Where(n => n.ParentId == node.Id).ToList();
 
-            if (children.Count > 0)
+            if (children.Any())
             {
                 foreach (var child in children)
                 {
